@@ -31,7 +31,7 @@
  
     --white: white; 
     --primary: #FF6565; 
-    --image-gradiant: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162986 60%); 
+    --image-gradient: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162986 60%); 
     --linear-gradient: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6) 0%, #07162980 20%); 
 }  
  

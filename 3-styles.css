@@ -370,156 +370,203 @@ body {
   margin: 10px auto; 
 } 
  
-/* Media Queries for Responsive designs =========================*/ 
-/* MOBILE */ 
+/* CONTACT US */ 
  
-@media screen and (max-width: 480px){ 
-  .wrapper { 
-    inline-size: 400px; 
-  } 
-  .hero { 
-    background-repeat: no-repeat; 
-    background-position: -600px -40px; 
-  } 
-  .hero-1 { 
-    inline-size: 375px; 
-    font-size: var(--font-size-medium); 
-    margin: 5px auto; 
-  } 
-  .hero-2 { 
-    inline-size: 400px; 
-    font-size: var(--font-size-x-small); 
-    margin: 10px auto; 
-  } 
-  .btn { 
-    margin: 20px auto; 
-  } 
-  .hero-3 { 
-    inline-size: 340px; 
-    margin: 20px auto; 
-    text-align: justify; 
-  } 
-  .tasks { 
-    text-align: center; 
-    margin: 20px auto; 
-  } 
-  .tasks-column { 
+.wrapper-contact { 
     margin: 40px auto; 
   } 
-  .column-detail { 
-    font-family: var(--font-family-base); 
-    inline-size: 340px; 
-    margin-inline: auto; 
+  .contact { 
+    block-size: 335px; 
+    inline-size: 375px; 
+    margin: auto; 
   } 
-  .tasks-detail { 
-    inline-size: 340px; 
-  } 
-  .results { 
-    background-color: unset; 
-    background-size: cover; 
-    padding: auto; 
-    margin: 5px auto; 
-  } 
-  .results-detail { 
-    font-family: var(--font-family-base); 
-    inline-size: 340px; 
+  .contact-title { 
+    font-family: var(--font-family-bold); 
     margin: 20px auto; 
+    color: #071629; 
   } 
-} 
- 
-/* TABLET */ 
- 
-@media screen and (min-width: 768px) { 
-  .wrapper { 
-    inline-size: 600px; 
-  } 
-  .header_container { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding-block-start: 20px; 
-  } 
-  .nav-list { 
-    display: inline-flex; 
-    justify-content: space-between; 
-    inline-size: 275px; 
-  } 
-  .logo { 
-    flex-basis: 80%; 
-    } 
-  .nav-icon { 
-    display: none; 
-  } 
-  .hero { 
-    background-repeat: no-repeat; 
-    background-position: center 0; 
-  } 
-  .hero-1 { 
+   
+  .contact-form { 
+    text-align: center; 
+    block-size: 335px; 
+    inline-size: 375px; 
     margin: auto; 
   } 
-  .hero-2 { 
-    margin: 10px auto; 
-    inline-size: 600px; 
+  .contact-label { 
+    position: relative; 
   } 
-  .btn { 
-    margin: 30px auto; 
-  } 
-  .hero-3 { 
-    inline-size: 600px; 
-    margin: 10px auto; 
-  } 
-  .tasks_container { 
-    display: grid; 
-    column-gap: 30px; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  } 
-  .column-detail { 
+  .contact-label { 
+    display: block; 
     font-family: var(--font-family-base); 
-    line-height: 20px; 
+    text-align: start; 
   } 
-  .results_container { 
-    display: grid; 
-    column-gap: 30px; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  } 
-} 
- 
-/* DESKTOP */ 
- 
-@media screen and (min-width: 1024px) { 
-  .wrapper { 
-    inline-size: 1000px; 
-  } 
-  .hero { 
-    background-repeat: no-repeat; 
-    background-position: center 0; 
-    background-size: cover; 
+  .contact-label input { 
+    display: block; 
+    border: none; 
     inline-size: 100%; 
+    color:#071629; 
+    border-bottom: 1.4px solid rgba(128, 128, 128, 0.274); 
+    height: 40px; 
+    margin: 20px 0; 
+  }  
+   
+  /* Media Queries for Responsive designs =========================*/ 
+  /* MOBILE */ 
+   
+  @media screen and (max-width: 480px){ 
+    .wrapper { 
+      inline-size: 400px; 
+    } 
+    .hero { 
+      background-repeat: no-repeat; 
+      background-position: -600px -40px; 
+    } 
+    .hero-1 { 
+      inline-size: 375px; 
+      font-size: var(--font-size-medium); 
+      margin: 5px auto; 
+    } 
+    .hero-2 { 
+      inline-size: 400px; 
+      font-size: var(--font-size-x-small); 
+      margin: 10px auto; 
+    } 
+    .btn { 
+      margin: 20px auto; 
+    } 
+    .hero-3 { 
+      inline-size: 340px; 
+      margin: 20px auto; 
+      text-align: justify; 
+    } 
+    .tasks { 
+      text-align: center; 
+      margin: 20px auto; 
+    } 
+    .tasks-column { 
+      margin: 40px auto; 
+    } 
+    .column-detail { 
+      font-family: var(--font-family-base); 
+      inline-size: 340px; 
+      margin-inline: auto; 
+    } 
+    .tasks-detail { 
+      inline-size: 340px; 
+    } 
+    .results { 
+      background-color: unset; 
+      background-size: cover; 
+      padding: auto; 
+      margin: 5px auto; 
+    } 
+    .results-detail { 
+      font-family: var(--font-family-base); 
+      inline-size: 340px; 
+      margin: 20px auto; 
+    } 
+    .contact { 
+      block-size: 360px; 
+      margin: auto; 
+    } 
+    .contact-form { 
+      margin: auto; 
+    } 
   } 
-  .hero-1 { 
-    margin: auto; 
+   
+  /* TABLET */ 
+   
+  @media screen and (min-width: 768px) { 
+    .wrapper { 
+      inline-size: 600px; 
+    } 
+    .header_container { 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      padding-block-start: 20px; 
+    } 
+    .nav-list { 
+      display: inline-flex; 
+      justify-content: space-between; 
+      inline-size: 275px; 
+    } 
+    .logo { 
+      flex-basis: 80%; 
+      } 
+    .nav-icon { 
+      display: none; 
+    } 
+    .hero { 
+      background-repeat: no-repeat; 
+      background-position: center 0; 
+    } 
+    .hero-1 { 
+      margin: auto; 
+    } 
+    .hero-2 { 
+      margin: 10px auto; 
+      inline-size: 600px; 
+    } 
+    .btn { 
+      margin: 30px auto; 
+    } 
+    .hero-3 { 
+      inline-size: 600px; 
+      margin: 10px auto; 
+    } 
+    .tasks_container { 
+      display: grid; 
+      column-gap: 30px; 
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    } 
+    .column-detail { 
+      font-family: var(--font-family-base); 
+      line-height: 20px; 
+    } 
+    .results_container { 
+      display: grid; 
+      column-gap: 30px; 
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    } 
   } 
-  .hero-2 { 
-    margin: 10px auto; 
-    inline-size: 600px; 
-  } 
-  .btn { 
+   
+  /* DESKTOP */ 
+   
+  @media screen and (min-width: 1024px) { 
+    .wrapper { 
+      inline-size: 1000px; 
+    } 
+    .hero { 
+      background-repeat: no-repeat; 
+      background-position: center 0; 
+      background-size: cover; 
+      inline-size: 100%; 
+    } 
+    .hero-1 { 
+      margin: auto; 
+    } 
+    .hero-2 { 
+      margin: 10px auto; 
+      inline-size: 600px; 
+    } 
+    .btn { 
+      margin: 30px auto; 
+    } 
+    .hero-3 { 
+    inline-size: 800px; 
     margin: 30px auto; 
+    } 
   } 
-  .hero-3 { 
-  inline-size: 800px; 
-  margin: 30px auto; 
+   
+  /* PENTAGON ANIMATION */ 
+   
+  span:hover { 
+    opacity: 0.9; 
+    transition: ease-out 0.6s; 
   } 
-} 
- 
-/* PENTAGON ANIMATION */ 
- 
-span:hover { 
-  opacity: 0.9; 
-  transition: ease-out 0.6s; 
-} 
- 
-.column-pentagone:hover { 
-  transition: transform 250ms; 
-  transform: translateY(-10px); 
-}
+   
+  .column-pentagone:hover { 
+    transition: transform 250ms; 
+    transform: translateY(-10px); 
+  }
